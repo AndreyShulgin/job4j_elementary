@@ -4,6 +4,11 @@ package ru.job4j.loop;
  * @author Andrey Shulgin (neonod404@gmail.com)
  */
 public class Slash {
+    /**
+     * Метод рисует крест в псевдографике
+     *
+     * @param size - размер креста
+     */
     public static void draw(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
@@ -22,6 +27,11 @@ public class Slash {
         System.out.println();
     }
 
+    /**
+     * Метод main
+     *
+     * @param args - args
+     */
     public static void main(String[] args) {
         System.out.println("Draw by 3");
         draw(3);
