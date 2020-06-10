@@ -19,6 +19,21 @@ public class SwitchArray {
     }
 
     /**
+     * Метод меняет местами элементы массива с индексом source на dest
+     *
+     * @param array  - массив
+     * @param source - индекс элемента массива
+     * @param dest   - индекс элемента массива
+     * @return - массив
+     */
+    public static int[] swap(int[] array, int source, int dest) {
+        int temp = array[source];
+        array[source] = array[dest];
+        array[dest] = temp;
+        return array;
+    }
+
+    /**
      * Метод main
      *
      * @param args - args
