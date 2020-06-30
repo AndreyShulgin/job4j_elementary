@@ -42,4 +42,18 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    /**
+     * Метод заполняет массив значениями диагонали двухмерного массива board
+     *
+     * @param board - двухмерный массив
+     * @return - массив
+     */
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index < board.length; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
+    }
 }
