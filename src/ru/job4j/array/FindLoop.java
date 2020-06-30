@@ -24,4 +24,24 @@ public class FindLoop {
         }
         return rst;
     }
+
+    /**
+     * Метод возвращает индекс заданного элемента в диапозоне
+     *
+     * @param data   - массив
+     * @param el     - искомый элемент
+     * @param start  - начало диапозона
+     * @param finish - конец диапозона
+     * @return - индекс массива или -1 если el не найден
+     */
+    public int indexOf(int[] data, int el, int start, int finish) {
+        int rst = -1;
+        for (int i = start; i < finish; i++) {
+            if (data[i] == el) {
+                rst = i;
+                break;
+            }
+        }
+        return rst;
+    }
 }
